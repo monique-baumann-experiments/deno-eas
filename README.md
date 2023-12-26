@@ -1,9 +1,7 @@
 # Deno EAS Gateway
 
-This [module](https://deno.land/x/eas_gateway) is under construction. 
+This [module](https://deno.land/x/eas_gateway) utilizes the [eas sdk](https://github.com/ethereum-attestation-service/eas-sdk) and simplifies EAS interactions even further for [deno](https://deno.land) fellows. 
   
-It utilizes [Bollinger Bands](https://www.youtube.com/watch?v=-6cbdJulb7s) and [sleep](https://deno.land/x/sleep). 
-
 ## Usage Example
 ```ts
 import { SchemaCreator } from "./src/schema-creator.ts"
@@ -23,8 +21,7 @@ deno run https://deno.land/x/eas_gateway/usage-example.ts
 
 ## Execute Unit Tests
 ```sh
-deno test https://deno.land/x/eas_gateway/src/schema-creator.spec.ts
-deno test https://deno.land/x/eas_gateway/src/attestation-creator.spec.ts
+deno test https://deno.land/x/eas_gateway/src/deno-eas-gateway.spec.ts
 ```
 
 ---
