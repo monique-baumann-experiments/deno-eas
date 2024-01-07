@@ -4,7 +4,7 @@ This [module](https://deno.land/x/eas_gateway) utilizes the [eas sdk](https://gi
   
 ## Usage Example
 ```ts
-import { DenoEAS } from "./src/deno-eas.ts"
+import { DenoEAS } from "https://deno.land/x/ethereum_attestation_service/mod.ts"
 
 const denoEAS = new DenoEAS()
 

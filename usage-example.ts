@@ -1,4 +1,5 @@
-import { DenoEAS } from "./src/deno-eas.ts"
+import { DenoEAS } from "./mod.ts"
+import { DenoEAS } from "https://deno.land/x/ethereum_attestation_service/mod.ts"
 
 const denoEAS = new DenoEAS()
 

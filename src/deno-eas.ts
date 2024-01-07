@@ -1,4 +1,4 @@
-import { EAS, SchemaEncoder, SchemaRegistry, PartialTypedDataConfig } from "npm:@ethereum-attestation-service/eas-sdk";
+import { EAS, SchemaEncoder, SchemaRegistry, PartialTypedDataConfig } from "../deps.ts";
 import { ethers } from 'npm:ethers';
 
 export class DenoEAS {
