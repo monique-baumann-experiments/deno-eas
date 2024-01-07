@@ -1,25 +1,28 @@
-# Deno EAS Gateway
+# Deno EAS 
 
 This [module](https://deno.land/x/eas_gateway) utilizes the [eas sdk](https://github.com/ethereum-attestation-service/eas-sdk) and simplifies EAS interactions even further for [deno](https://deno.land) fellows. 
   
 ## Usage Example
 ```ts
-import { DenoEASGateway } from "./src/deno-eas-gateway.ts"
+import { DenoEAS } from "./src/deno-eas.ts"
 
-const denoEASGateway = new DenoEASGateway()
+const denoEAS = new DenoEAS()
 
-const attestation = await denoEASGateway.getAttestation("0xff08bbf3d3e6e0992fc70ab9b9370416be59e87897c3d42b20549901d2cccc3e")
+const attestation = await denoEAS.getAttestation("0xff08bbf3d3e6e0992fc70ab9b9370416be59e87897c3d42b20549901d2cccc3e")
 console.log(attestation)
+const schema = await denoEAS.getSchemaInfo("0xb16fa048b0d597f5a821747eba64efa4762ee5143e9a80600d0005386edfc995")
+console.log(schema)
+
 ```
 
-## Execute Usage Example
+## Execute Usage Example 
 ```sh
-deno run https://deno.land/x/eas_gateway/usage-example.ts
+deno run https://deno.land/x/deno_eas/usage-example.ts # under construction
 ```
 
 ## Execute Unit Tests
 ```sh
-deno test https://deno.land/x/eas_gateway/src/deno-eas-gateway.spec.ts
+deno test https://deno.land/x/deno_eas/src/deno-eas.spec.ts # under construction
 ```
 
 ---
