@@ -1,6 +1,6 @@
 # Deno EAS 
 
-This [module](https://deno.land/x/eas_gateway) utilizes the [eas sdk](https://github.com/ethereum-attestation-service/eas-sdk) and simplifies EAS interactions even further for [deno](https://deno.land) fellows. 
+This [module](https://deno.land/x/ethereum_attestation_service) utilizes the [eas sdk](https://github.com/ethereum-attestation-service/eas-sdk) and simplifies EAS interactions even further for [deno](https://deno.land) fellows. 
   
 ## Usage Example
 ```ts
