@@ -1,4 +1,4 @@
-import { EAS, Offchain, SchemaEncoder, SchemaRegistry, PartialTypedDataConfig, OffChainAttestationVersion } from "npm:@ethereum-attestation-service/eas-sdk";
+import { EAS, OffChain, SchemaEncoder, SchemaRegistry, PartialTypedDataConfig, OffchainAttestationVersion } from "npm:@ethereum-attestation-service/eas-sdk";
 import { ethers } from '../deps.ts'; 
 
 export class DenoEAS {
@@ -172,7 +172,7 @@ export class DenoEAS {
           version: attestation.sig.domain.version,
           chainId: attestation.sig.domain.chainId,
         };
-        const offchain = new Offchain(EAS_CONFIG, undefined, this.eas);
+        const offchain = new OffChain(EAS_CONFIG, OffchainAttestationVersion, this.eas);
         // const isValidAttestation = offchain.verifyOffchainAttestationSignature(
         //   attestation.signer,
         //   attestation.sig
