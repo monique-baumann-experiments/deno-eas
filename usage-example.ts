@@ -1,5 +1,5 @@
 import { DenoEAS } from "./mod.ts"
-import { DenoEAS } from "https://deno.land/x/ethereum_attestation_service/mod.ts"
+// import { DenoEAS } from "https://deno.land/x/ethereum_attestation_service/mod.ts"
 
 const denoEAS = new DenoEAS()
 
@@ -8,4 +8,4 @@ const denoEAS = new DenoEAS()
 const schema = await denoEAS.getSchemaInfo("0xb16fa048b0d597f5a821747eba64efa4762ee5143e9a80600d0005386edfc995")
 console.log(schema)
 
-// await denoEAS.verifyOffchainAttestation()
+await denoEAS.verifyOffchainAttestation()

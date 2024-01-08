@@ -1,1 +1,1 @@
-export * from "./src/deno-eas-gateway.ts"
+export * from "./src/deno-eas.ts"
